@@ -1,0 +1,32 @@
+@startuml
+!include xdemicskin.plantuml
+
+actor SchoolAdmin
+participant ClientApp
+database SchoolDatabase
+participant BadgeMicroservice
+SchoolAdmin -> ClientApp: Create New Course
+SchoolAdmin -> SchoolAdmin : Enter relevant information
+note over SchoolAdmin, ClientApp
+	Course Name
+	Course Code
+	Course Description
+	Grading Schema (Import? from Alignment?
+	Criteria (Internally defined)
+	Tags
+	issuer	
+	Alignment (e.g. Link to AP Official guide or Schools own)
+		Alignement Specs as []
+	(We need all the information necessary for 
+	https://github.com/IMSGlobal/openbadges-specification/blob/develop/examples/index.md#badgeclass-example-definition)
+
+endnote
+
+ClientApp -> BadgeMicroservice: Create Badge Class 
+
+BadgeMicroservice -> SchoolDatabase: Pull Necessary Data
+
+BadgeMicroservice -> BadgeMicroservice: Generate "New Course" Badge
+
+BadgeMicroservice -> IPFS-HTTPS-ETC: Publish Online
+@enduml
