@@ -1,0 +1,19 @@
+@startuml
+!include xdemicskin.plantuml
+title Desktop Web Server App to Uport Mobile Request Flow
+participant ClientApp
+participant MessagingServer
+participant PushServer
+participant UportMobile
+actor SchoolAdmin
+
+ClientApp -> ClientApp : Selective Disclosure Request Created 
+ClientApp -> SchoolAdmin : Show QR code containing request
+SchoolAdmin -> UportMobile: Scans QR code
+UportMobile -> SchoolAdmin : Authorize Request?
+SchoolAdmin -> UportMobile: Allow/Disallow
+UportMobile -> UportMobile: Sign Selective Disclosure Response with PushToken
+UportMobile -> MessagingServer: Selective Disclosure Response
+MessagingServer -> ClientApp: Selective Disclosure Response
+
+@enduml

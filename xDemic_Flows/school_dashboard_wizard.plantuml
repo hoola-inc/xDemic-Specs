@@ -1,0 +1,69 @@
+@startuml
+!include xdemicskin.plantuml
+(*) --> "School Admin Logged 1st Time" as 1ST
+1ST --> "Welcome Message" as Welcome
+
+if "Identity Info Complete" then
+	--> [yes] "Individual Data Form" as IDForm
+	
+	note left: School Admin Personal Data
+	
+	if "Wizard?" then
+		--> [yes] "Startup Wizard" as SW
+		SW --> "School Info Wizard" as SchoolInfo
+		note left 
+			School Name
+			Logo
+			Contact Info 
+				Email, 
+				Phone Number, 
+				Address, 
+				Website etc
+			Branded URL (if possible)
+		endnote
+
+		SchoolInfo --> "Security Settings" as SecuritySettings
+		note left
+			Backup and Recovery Settings
+			Set Access Levels
+		endnote
+		
+		SecuritySettings --> "Add other uses" as AddOthers		
+		note left 
+			Add others wizard
+			https://docs.moodle.org/37/en/Add_a_new_user
+		endnote
+		
+		AddOthers --> "Confirm Users"
+		AddOthers --> "Academic Structure Wizard" as AcademicStructureWizard
+		
+		note left: Total number of classes (Check boxes)
+		
+		AcademicStructureWizard --> "CSV" as AcademicCSV 
+		AcademicStructureWizard --> "Manual" as AcademicManual
+		AcademicStructureWizard --> "Smart Add" as AcademicSmart
+		
+		AcademicStructureWizard --> "Enrollment" as Enrollment
+		
+		Enrollment --> "CSV" as StudentCSVAdd
+		Enrollment --> "Manual" as StudentManualAdd
+		Enrollment --> "Import" as StudentImportAdd
+		StudentCSVAdd --> HomePage
+		StudentManualAdd --> HomePage
+		StudentImportAdd --> HomePage
+		
+	else
+		-->[no] HomePage
+	endif
+else
+	--> [no] "Form with Data Missing" as MissForm
+	if "Forms completed" then
+		note right: "Remind Admin to complete Identity Data"
+		--> [yes] IDForm
+	endif
+
+
+
+
+
+@enduml

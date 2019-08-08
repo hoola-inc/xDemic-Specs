@@ -1,0 +1,62 @@
+@startuml
+!include xdemicskin.plantuml
+title School Invites Student 
+actor SchoolAdmin
+participant ClientApp
+database SchoolDatabase
+participant MessagingServer
+participant UportMobile
+actor Student
+
+
+SchoolAdmin --> ClientApp: Enrolls student
+note over SchoolAdmin, ClientApp
+	Student Name
+	DOB
+	Student ID
+	Contact: Phone/Email
+endnote
+
+
+ClientApp -> SchoolDatabase: Check if record already exists 
+alt record exists
+	SchoolDatabase -> ClientApp: Student Already Enrolled
+end
+
+SchoolDatabase -> ClientApp: No Matching Record. Invite!
+
+ClientApp -> ClientApp: Selective Disclosure Request Created  
+ClientApp -> Student: Contact (email/phone) Donwload Link + SD Link
+Student -> Student: Downloads App from link
+
+Student -> UportMobile: Scans QR code
+UportMobile -> Student : Authorize Request?
+Student -> UportMobile: Allow/Disallow
+UportMobile -> UportMobile: Sign Selective Disclosure Response with PushToken
+note over Student, UportMobile
+	Response is a verified claim (Telco/Payment App verified)
+	or 
+	Self-Signed Claim
+endnote
+UportMobile -> MessagingServer: Selective Disclosure Response
+MessagingServer -> ClientApp: Selective Disclosure Response
+
+ClientApp -> SchoolDatabase: Match Response with records
+
+alt Recrod Found + Matches, DID !Exists
+	SchoolDatabase -> SchoolDatabase: Student DID and BoxPub Added  
+else Recrodord Not Found
+	SchoolDatabase -> ClientApp : Add Student?
+
+else Record Found DID Exists
+	SchoolDatabase -> ClientApp : Add Student?
+
+else Record Found Details Conflict
+	SchoolDatabase -> ClientApp : Add Student?
+
+end
+
+
+
+
+@enduml

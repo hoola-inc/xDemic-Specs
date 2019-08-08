@@ -1,0 +1,12 @@
+@startuml
+'!include xdemicskin.plantuml'
+(*) --> "Home Page" as HomePage
+HomePage --> "Add New Course" as AddNewCourse
+AddNewCourse --> "General Description" as GeneralDescription
+note right
+	Course full name
+	Course Code
+	Course category
+endnote
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+!include xdemicskin.plantuml
+alt Recrod Found + Matches, DID !Exists
+	SchoolDatabase -> SchoolDatabase: Student DID and BoxPub Added  
+else Recrodord Not Found
+	SchoolDatabase -> ClientApp : Add Student?
+	
+
+else Record Found DID Exists
+	SchoolDatabase -> ClientApp : Add Student?
+
+else Record Found Details Conflict
+	SchoolDatabase -> ClientApp : Add Student?
+
+end
+@enduml

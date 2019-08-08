@@ -1,0 +1,60 @@
+@startuml
+skinparam BoxPadding 50
+(*) --> "Downloads App"
+if "New User" then 
+    --> [true] "New User Registeration"
+        if "Login Using 3rd Party" then
+            --> [true] "3rd Party Verification" as 3RD
+            3RD--> [We Chat] "We Chat Flow" as WCF
+                WCF --> "WC Process"  as WCP
+                WCP -->"Form With Pulled Data" as FormPop 
+            3RD--> [Ali Pay] "AliPay Flow" as APF 
+                APF -->"AP Process" as APP  
+                APP -->FormPop
+        else 
+            -->[false] "Phone or Email" as PE
+            
+            PE--> [Phone] "Phone Verification" as PV
+            PV --> "2FA" 
+            if "ID verifiation Telco"
+                --> [true] FormPop 
+            else 
+                --> [false] "Manual Entry" as ME
+            
+            endif
+            
+            PE --> [Email] "Email Verification" as EV 
+            EV --> "Email Authorization" as EA 
+
+            if "" then
+                --> [Failure] "Failure Message" as FM 
+            else
+                --> [Success] ME 
+            endif
+                
+        endif
+
+else
+    -->[false] "Existing User FLow"        
+    if "Access to Auth"
+        --> [true] "New Device Flow" as NDF
+        NDF --> "QR" as QR
+        NDF --> "Push Note on Existing Device" as PN
+        NDF --> "Enter Pin" as Pin
+        QR --> "Authorize Login" as AuthLog
+        PN --> "Authorize Login" as AuthLog
+        Pin --> "Authorize Login" as AuthLog
+
+        if "" then
+            --> [Sucess] FormPop 
+        else
+            --> [Failure] FM 
+        endif
+    else 
+        --> [false] "Recover Device Flow" as Recov
+        Recov --> Social 
+        Recov --> Mnemonic 
+
+    endif
+
+@enduml
