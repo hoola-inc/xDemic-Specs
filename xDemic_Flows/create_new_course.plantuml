@@ -26,7 +26,12 @@ ClientApp -> BadgeMicroservice: Create Badge Class
 
 BadgeMicroservice -> SchoolDatabase: Pull Necessary Data
 
-BadgeMicroservice -> BadgeMicroservice: Generate "New Course" Badge
+BadgeMicroservice -> BadgeMicroservice: Generate "New Course" Badge Class
 
-BadgeMicroservice -> IPFS-HTTPS-ETC: Publish Online
+BadgeMicroservice -> WebOrWeb3: Publish Online, Https or IPFS
+WebOrWeb3 -> BadgeMicroservice: Course Location URL
+BadgeMicroservice -> SchoolDatabase: Save Location of URL
+
+
+
 @enduml

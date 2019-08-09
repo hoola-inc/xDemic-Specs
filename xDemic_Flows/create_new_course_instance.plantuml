@@ -1,0 +1,35 @@
+@startuml
+!include xdemicskin.plantuml
+
+actor SchoolAdmin
+participant ClientApp
+database SchoolDatabase
+participant BadgeMicroservice
+participant WebOrWeb3
+
+SchoolAdmin -> ClientApp: Creates new course instance
+
+SchoolAdmin -> SchoolAdmin : Enter relevant information
+SchoolAdmin --> ClientApp : Add Teacher
+create Teacher
+ClientApp --> Teacher : Assign Course Instance to Teacher (DID)
+ClientApp --> SchoolDatabase: Associate Teacher DID with CourseInstance (Publish?)
+ClientApp -> BadgeMicroservice: Create Course Instance Class
+
+BadgeMicroservice ->WebOrWeb3 : Pulls relevant course BadgeClass data
+WebOrWeb3 -> BadgeMicroservice: Returns BadgeClass LD
+BadgeMicroservice -> BadgeMicroservice: Parses BadgeClass LD, Populates Course Instance Class with BadgeClass URL
+BadgeMicroservice -> ClientApp : CourseInstanct sucessfully created
+ClientApp -> SchoolAdmin: Publish course?/Save Course for Later/Cancel
+SchoolAdmin --> ClientApp: Yes
+ClientApp -> BadgeMicroservice: Publish CourseInstance
+BadgeMicroservice -> WebOrWeb3 : Publish CourseInstance
+WebOrWeb3 -> BadgeMicroservice: Return Published URL
+BadgeMicroservice -> SchoolDatabase : Save URL
+ClientApp -> SchoolAdmin: Add students?
+
+SchoolAdmin --> ClientApp: Add Students (CSV or Individual)
+ClientApp --> SchoolDatabase: Associate student DID with CourseInstance URL
+
+
+@enduml
