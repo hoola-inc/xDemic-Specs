@@ -7,13 +7,18 @@ Story: School invites student
 
 Feature: Add student
 Background:
- Given: User is logged in
+ 	Given: User is logged in
 
 Scenario: Adding Student Information
- Given: User is on AddStudent tab
- When: User enter student information into form
- And: Presses Add button
- Then: Status of action returns to user
+	# What is an AddStudent Tab, is it a subsection of another tab
+	# What main tab does it belong to?
+ 	Given: User is on AddStudent tab 
+	# What student information? Everything needs to be concrete.
+
+	# Does Admin only enter student information into form? Or can they import
+ 	When: User enter student information into form
+ 	And: Presses Add button
+ 	Then: Status of action returns to user
 
 
 Scenario: Status returns Student Already Enrolled
