@@ -22,19 +22,20 @@ Scenario: Adding Student Information
 
 
 Scenario: Status returns Student Already Enrolled
- Given: User has added student information in AddStudent menu and pressed Add button
- Then: User receives Student Already Enrolled message.
- When: User clicks Okay button
- Then: Message window closes
- And: User returns to AddStudent menu
+ 	Given: User has added student information in AddStudent menu and pressed Add button
+ 	Then: User receives Student Already Enrolled message.
+ 	When: User clicks Okay button
+ 	Then: Message window closes
+ 	And: User returns to AddStudent menu
 
 
 Scenario: StudentInvite successfully sent
- Given: User has added student information in AddStudent menu and pressed Add button
- When: Student is eligible to be added
- Then: User receives message that download and SD link successfully sent to student
- When: User presses Okay button
- Then: Student added to StudentMenu
+ 	Given: User has added student information in AddStudent menu and pressed Add button
+ 	When: Student is eligible to be added
+ 	Then: User receives message that download and SD link successfully sent to student
+ 	When: User presses Okay button
+	# There are 4 different scenarios for student being added. Records exists !DID, etc
+ 	Then: Student added to StudentMenu
 
 Scenario: User opens StudentMenu
  Given:User is on StudentMenu page
