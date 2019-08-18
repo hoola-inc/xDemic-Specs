@@ -37,39 +37,40 @@ Scenario: StudentInvite successfully sent
 	# There are 4 different scenarios for student being added. Records exists !DID, etc
  	Then: Student added to StudentMenu
 
+# Why is this here? Is this part of the School Invites Student Story?
 Scenario: User opens StudentMenu
- Given:User is on StudentMenu page
- Then: User sees a list of students in scroll down menu
- And: Each student cell contains Student info and status
- When: Student successfully added
- Then: Status is successful 
+ 	Given:User is on StudentMenu page
+ 	Then: User see's a list of students in scroll down menu
+ 	And: Each student cell contains Student info and status
+ 	When: Student successfully added
+ 	Then: Status is successful 
 
 
 Scenario: Student record not found
- Given:User is on StudentMenu page and student status is NotFound
- And: User clicks on status cell
- Then: User sees message record doesnt exist in schoolDB
- And: AddNewStudent button shown on bottom
- When: User clicks AddNewStudent
- Then: User returns to StudentMenu and student status is Successful. 
+	Given:User is on StudentMenu page and student status is NotFound
+	And: User clicks on status cell
+	Then: User sees message record doesnt exist in schoolDB
+	And: AddNewStudent button shown on bottom
+	When: User clicks AddNewStudent
+	Then: User returns to StudentMenu and student status is Successful. 
 
 Scenario: Student record found but DID exists
- Given:User is on StudentMenu page and student status is DidExists
- And: User clicks on status cell
- Then: User sees message DID already exists
- And: SendMessageExistingDID button shown at bottom
- When: User clicks SendMessageExistingDID button
- Then: User receives confirmation message Recovery Message Sent
- And: User returns to StudentMenu (will the student be removed from StudentMenu?)
+ 	Given:User is on StudentMenu page and student status is DidExists
+ 	And: User clicks on status cell
+ 	Then: User sees message DID already exists
+ 	And: SendMessageExistingDID button shown at bottom
+ 	When: User clicks SendMessageExistingDID button
+ 	Then: User receives confirmation message Recovery Message Sent
+ 	And: User returns to StudentMenu (will the student be removed from StudentMenu?)
 
 Scenario: Student record found but details conflict
- Given:User is on StudentMenu page and student status is Conflict
- And: User clicks on status cell
- Then: User sees details of conflict
- And: User sees ConflictResolution Button
- When: User clicks ConflictResolution
- Then: ConflictResolutionTab opens
- And: Saad wonders how conflict resolution would work(is this a feature?)
+ 	Given:User is on StudentMenu page and student status is Conflict
+ 	And: User clicks on status cell
+ 	Then: User sees details of conflict
+ 	And: User sees ConflictResolution Button
+ 	When: User clicks ConflictResolution
+ 	Then: ConflictResolutionTab opens
+ 	And: Saad wonders how conflict resolution would work(is this a feature?)
 
 
 
@@ -86,7 +87,7 @@ Feature: Search Student
  Given: I am in StudentMenu
     Then: I should see list sorted by name
 
-  Scenario: search with a filter
+Scenario: search with a filter
  Given: User wants to search with a filter
  When: User selects filter type or types
  And: User enters metrics of searching filter
