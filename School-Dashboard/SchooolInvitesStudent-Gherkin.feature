@@ -88,7 +88,7 @@ Feature: Search Student
     Then: I should see list sorted by name
 
 Scenario: search with a filter
- Given: User wants to search with a filter
- When: User selects filter type or types
- And: User enters metrics of searching filter
- Then: User sees result based on filter metrics
+ 	Given: User wants to search with a filter
+ 	When: User selects filter type or types
+ 	And: User enters metrics of searching filter
+ 	Then: User sees result based on filter metrics
