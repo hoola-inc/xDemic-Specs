@@ -20,7 +20,7 @@
 > In this paper, we explore the idea of using a web of trust as a tool to add authenticity to decentralized identifiers (DIDs). We define a framework for deriving relative trust degrees using a given trust metric: a "trustworthiness" score for a given identity from the perspective of another identity. It is our intent that this framework may be used as a starting point for an ongoing exploration of graph-based, decentralized trust. We believe this approach may ultimately be used as a foundation for decentralized reputation.
 
 
-## [Social Recovery Process muPort] [(Text)](https://github.com/hoola-inc/xDemic-Specs/blob/master/social-recovery.md)
+## [Social Recovery Process muPort](https://github.com/hoola-inc/xDemic-Specs/blob/master/social-recovery.md)
 
 ## Flows
     Selective Disclosure Request
