@@ -1,13 +1,13 @@
 # xDemic Architecture
+## To Do
 Fix everything to JWT and message passing/Event Driven
 WeChat and AliPay Integration 
-Identity
+	Identity
+	Payment
+	Stripe
 Payment
-Stripe
-Identity
-Payment
-Fix Onboarding
-Fix Dashboard
+	Fix Onboarding
+	Fix Dashboard
 
 Reference https://blockchain.ieee.org/images/files/pdf/20180918-blockchain-identity-management_-_tony-nadalin.pdf
 * Contents
@@ -23,3 +23,5 @@ Reference https://blockchain.ieee.org/images/files/pdf/20180918-blockchain-ident
 		* https://uniresolver.io/
 		* did:ethr resolver - https://github.com/uport-project/uport-did-driver 
 			* Might need to self host
+	* Private Key Format
+	* Import https://github.com/decentralized-identity/did-auth-jose/blob/master/lib/crypto/ec/EcPrivateKey.ts instead of RSA
