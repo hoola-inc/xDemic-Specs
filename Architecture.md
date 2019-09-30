@@ -1,13 +1,13 @@
 # xDemic Architecture
 ## To Do
-Fix everything to JWT and message passing/Event Driven
-WeChat and AliPay Integration 
-	Identity
-	Payment
-	Stripe
-Payment
-	Fix Onboarding
-	Fix Dashboard
+Fix everything to JWT and message passing/Event Driven<br/>
+WeChat and AliPay Integration <br/>
+	Identity<br/>
+	Payment<br/>
+	Stripe<br/>
+Payment<br/>
+	Fix Onboarding<br/>
+	Fix Dashboard<br/>
 
 Reference https://blockchain.ieee.org/images/files/pdf/20180918-blockchain-identity-management_-_tony-nadalin.pdf
 * Contents
