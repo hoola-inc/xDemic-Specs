@@ -1,11 +1,13 @@
 # xDemic Architecture
 ## To Do
-Fix everything to JWT and message passing/Event Driven<br/>
-* WeChat and AliPay Integration <br/>
+Fix everything to JWT and message passing/Event Driven
+* WeChat and AliPay Integration 
 	* Identity
 	* Payment
 	* Stripe
 * Fix Onboarding
+Implement Dashboard Onboarding
+Implement School Startup
 * Fix Dashboard - UX/UI
 - [ ] Add SmartCampus/Xioaboa Features
 - [ ] Add Help Section
@@ -14,6 +16,12 @@ Fix everything to JWT and message passing/Event Driven<br/>
 - [ ] Add info tile
 - [ ] Icons for each data type
 - [ ] Make activity like Xiabao, color coded etc
+
+* Fix Mobile UI/UX
+- [ ] Fix Buttons, add feedback and height
+- [ ] Fix Notification State management
+- [ ] Add Onboarding Screens
+- [ ] Add include onboarding
 
 
 Reference https://blockchain.ieee.org/images/files/pdf/20180918-blockchain-identity-management_-_tony-nadalin.pdf
