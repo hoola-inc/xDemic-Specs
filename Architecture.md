@@ -40,3 +40,5 @@ Reference https://blockchain.ieee.org/images/files/pdf/20180918-blockchain-ident
 			* Might need to self host
 	* Private Key Format
 	* Import https://github.com/decentralized-identity/did-auth-jose/blob/master/lib/crypto/ec/EcPrivateKey.ts instead of RSA
+	* Linked Data Signatures and Linked Data Proofs
+	* Cryptography Basics: https://hackernoon.com/a-closer-look-at-ethereum-signatures-5784c14abecc
