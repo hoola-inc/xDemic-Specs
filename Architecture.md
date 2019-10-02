@@ -1,6 +1,7 @@
 # xDemic Architecture
 ## To Do
 Fix everything to JWT and message passing/Event Driven
+Add Blockchain based timestamps
 * WeChat and AliPay Integration 
 	* Identity
 	* Payment
