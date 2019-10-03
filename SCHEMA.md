@@ -1,8 +1,197 @@
 # Schema for xDemic
 xDemic will use a [Verifiable Credentials Data Model] (https://www.w3.org/TR/vc-data-model/), combinded with [IMS Extended Credentials Schema]  
 
-The following is included in the claims section of the JWT that is sent using uport.
+## Person Data
+```
+"person": {
+	"id": "did:example:BcRisGnqV4QPb6bRmDCqEjyuubBarS1Y1nhDwxBMTXY4",
+	"type": "Person",
+	"fullName": "Madison Williams",
+	"givenName": "Madison",
+	"familyName": "Williams",
+	"email": "mwilliams@example.org",
+	"mobile": "0000000000",
+	"URL": "http://example.org/mwilliams",
+	"studentId": "123456789",
+	"birthDate": "1989-01-01",
+	"sourcedId": "0123456789"
+	},
 
+```
+## School Data
+```
+"issuer": {
+	"id": "did:example:ADfascRisGnqV4QPb6bRmDCqEjyuubBarS1Y1nhDwxBMTXY4",
+	"type": "Issuer",
+	"name": "Competency-Based University",
+      	"description": "string",
+	"url": "http://example.org/cbu",
+	
+	"address" : {
+		"id" : "urn:uuid:AAD82CF7-BF8B-4514-8914-E35D0FAC8B7B",
+		"type": "PostalAddress",
+		"addressCountry" : "France",
+		"addressLocality": "Paris",
+		"addressRegion" : "Île-de-France",
+		"postalCode" : "F-75002",
+		"postOfficeBoxNumber" : "..String..",
+		"streetAddress" : "38 avenue de l'Opera"
+	},
+	"email": "secretariat(at)google.org",
+	"phone": "0000000000",
+	"logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVsAAAClCAYAAADyIF4,    
+      	"publicKey": {
+      	  	"id": "string",
+      	  	"type": "string",
+      	  	"owner": "string",
+      	  	"publicKeyPem": "string"
+      	},
+      	"revocationList": {
+      	  	"id": "string",
+      	  	"type": "string",
+      	  	"issuer": "string",
+      	  	"revokedAssertions": [
+      	  	  "string"
+      	  ]
+      	},
+      	"sourcedId": "string",
+      	"url": "string",
+      	"verification": {
+      	  	"id": "string",
+      	  	"type": "Hosted",
+      	  	"allowedOrigins": [
+      	  	  "string"
+      	  ],
+      	  	"creator": "string",
+      	  	"startsWith": [
+      	  	  "string"
+      	  ],
+      	  	"verificationProperty": "string"
+      	},
+  },
+```
+
+## Couse Data (Achievement)
+```
+  "achievement": {
+    "id": "string",
+    "type": "Achievement",
+    "alignments": [{
+    	"type": "AlignmentObject",
+    	"alignmentType": "educationalLevel",
+    	"educationalFramework": "US Grade Levels",
+    	"targetName": "2",
+    	"targetUrl": {
+    	  "@id": "http://purl.org/ASN/scheme/ASNEducationLevel/2"
+     	}
+  	}
+    ],
+    "creditsAvailable": 3,
+    "name": "Intro to Computer Science",
+    "fieldOfStudy": "Computer Science",
+    "issuer": {
+      "id": "did:example:ADfascRisGnqV4QPb6bRmDCqEjyuubBarS1Y1nhDwxBMTXY4",
+      },
+    "level" : {
+    	"@type": "DefinedTerm",
+    	"name": "SCQF Level 7",
+    	"inDefinedTermSet": "https://www.sqa.org.uk/sqa/71377.html"
+  },
+    "requirement": {
+      	"id": "string",
+      	"type": "string",
+      	"narrative": "string",
+      	"additionalProp1": {}
+    },
+    "resultDescriptions": [
+      {
+        "id": "string",
+        "type": "GradePointAverage"|"LetterGrade"|"Percent"|"PerformanceLevel"|"PredictedScore"|"Result"|"RawScore"|"RubricScore"|"ScaledScore",
+        "name": "string",
+        "resultMin": "F",
+        "resultMax": "A"
+      }
+    ],
+    "specialization": "Basic Technical Literacy",
+    "tags": [
+      "Tech", "Intro", "etc"
+    ],
+  },
+```
+## Assertion
+```
+"achievement":{
+  "id": "string",
+  "type": "Assertion",
+  "achievement": {
+    "id": "string",
+  },
+  "creditsEarned": 3,
+  "endDate": "2019-10-02T19:01:30.104Z",
+  "endorsements": [
+    {
+      "id": "string",
+      "type": "Endorsement",
+      "additionalProp1": {}
+    }
+  ],
+  "evidence": [
+    {
+      "id": "string",
+      "type": "string",
+      "artifacts": [
+        {
+          "type": "string",
+          "description": "string",
+          "name": "string",
+          "url": "string"
+        }
+      ],
+      "audience": "string",
+      "description": "string",
+      "genre": "string",
+      "name": "string",
+      "narrative": "string"
+    }
+  ],
+  "image": "string",
+  "issuedOn": "2019-10-02T19:01:30.104Z",
+  "narrative": "string",
+  "recipient": {
+    "id": "did:example:BcRisGnqV4QPb6bRmDCqEjyuubBarS1Y1nhDwxBMTXY4",
+    "type": "string",
+    "identity": "string",
+    "hashed": true,
+    "salt": "string"
+  },
+  "results": [
+    {
+      "id": "string",
+      "type": "GradePointAverage",
+      "name": "string",
+      "value": "string"
+    }
+  ],
+  "revocationReason": "string",
+  "revoked": false,
+  "role": "string",
+  "startDate": "2019-10-02T19:01:30.105Z",
+  "term": "Fall 2019",
+  "verification": {
+    "id": "string",
+    "type": "Hosted",
+    "allowedOrigins": [
+      "string"
+    ],
+    "creator": "string",
+    "startsWith": [
+      "string"
+    ],
+    "verificationProperty": "string"
+  },
+}
+```
+The following is included in the claims section of the JWT that is sent using uport.
 ## Example
 ```
 {
