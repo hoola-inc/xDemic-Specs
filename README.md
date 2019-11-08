@@ -1,3 +1,7 @@
+Note: 
+* USE MOURO (uPort) FOR v1  
+* Switch to portable ID-HUB ASAP
+
 ## Protocols and Tech
 
 ## [*IPLD as a general pattern for DID documents and Verifiable Claims*](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/ipld-did.pdf) [(Text)](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/ipld-did.md)
