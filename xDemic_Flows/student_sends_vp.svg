@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="598px" preserveAspectRatio="none" style="width:1551px;height:598px;" version="1.1" viewBox="0 0 1551 598" width="1551px" zoomAndPan="magnify"><defs><filter height="300%" id="f1jsogpyjei37o" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><line style="stroke: #878787; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="38" x2="38" y1="86.2969" y2="511.0234"/><line style="stroke: #878787; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="668" x2="668" y1="86.2969" y2="511.0234"/><line style="stroke: #878787; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1158" x2="1158" y1="86.2969" y2="511.0234"/><line style="stroke: #878787; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1491" x2="1491" y1="86.2969" y2="511.0234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="55" x="8" y="82.9951">Student</text><ellipse cx="38.5" cy="13" fill="#FFFFFF" filter="url(#f1jsogpyjei37o)" rx="8" ry="8" style="stroke: #75A4FF; stroke-width: 2.0;"/><path d="M38.5,21 L38.5,48 M25.5,29 L51.5,29 M38.5,48 L25.5,63 M38.5,48 L51.5,63 " fill="none" filter="url(#f1jsogpyjei37o)" style="stroke: #75A4FF; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="55" x="8" y="523.0186">Student</text><ellipse cx="38.5" cy="536.3203" fill="#FFFFFF" filter="url(#f1jsogpyjei37o)" rx="8" ry="8" style="stroke: #75A4FF; stroke-width: 2.0;"/><path d="M38.5,544.3203 L38.5,571.3203 M25.5,552.3203 L51.5,552.3203 M38.5,571.3203 L25.5,586.3203 M38.5,571.3203 L51.5,586.3203 " fill="none" filter="url(#f1jsogpyjei37o)" style="stroke: #75A4FF; stroke-width: 2.0;"/><rect fill="#FFFFFF" filter="url(#f1jsogpyjei37o)" height="30.2969" rx="5" ry="5" style="stroke: #75A4FF; stroke-width: 1.5;" width="141" x="596" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="127" x="603" y="70.9951">StudentMobileApp</text><rect fill="#FFFFFF" filter="url(#f1jsogpyjei37o)" height="30.2969" rx="5" ry="5" style="stroke: #75A4FF; stroke-width: 1.5;" width="141" x="596" y="510.0234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="127" x="603" y="530.0186">StudentMobileApp</text><rect fill="#FFFFFF" filter="url(#f1jsogpyjei37o)" height="30.2969" rx="5" ry="5" style="stroke: #75A4FF; stroke-width: 1.5;" width="61" x="1126" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="1133" y="70.9951">School</text><rect fill="#FFFFFF" filter="url(#f1jsogpyjei37o)" height="30.2969" rx="5" ry="5" style="stroke: #75A4FF; stroke-width: 1.5;" width="61" x="1126" y="510.0234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="1133" y="530.0186">School</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="101" x="1438" y="82.9951">mouro_ID_Hub</text><path d="M1473.5,34 C1473.5,24 1491.5,24 1491.5,24 C1491.5,24 1509.5,24 1509.5,34 L1509.5,60 C1509.5,70 1491.5,70 1491.5,70 C1491.5,70 1473.5,70 1473.5,60 L1473.5,34 " fill="#FEFECE" filter="url(#f1jsogpyjei37o)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M1473.5,34 C1473.5,44 1491.5,44 1491.5,44 C1491.5,44 1509.5,44 1509.5,34 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="101" x="1438" y="523.0186">mouro_ID_Hub</text><path d="M1473.5,536.3203 C1473.5,526.3203 1491.5,526.3203 1491.5,526.3203 C1491.5,526.3203 1509.5,526.3203 1509.5,536.3203 L1509.5,562.3203 C1509.5,572.3203 1491.5,572.3203 1491.5,572.3203 C1491.5,572.3203 1473.5,572.3203 1473.5,562.3203 L1473.5,536.3203 " fill="#FEFECE" filter="url(#f1jsogpyjei37o)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M1473.5,536.3203 C1473.5,546.3203 1491.5,546.3203 1491.5,546.3203 C1491.5,546.3203 1509.5,546.3203 1509.5,536.3203 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><polygon fill="#75A4FF" points="656.5,113.4297,666.5,117.4297,656.5,121.4297,660.5,117.4297" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="38.5" x2="662.5" y1="117.4297" y2="117.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="45.5" y="112.3638">Apply to school</text><polygon fill="#75A4FF" points="1146.5,142.5625,1156.5,146.5625,1146.5,150.5625,1150.5,146.5625" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="668.5" x2="1152.5" y1="146.5625" y2="146.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="89" x="675.5" y="141.4966">Send Request</text><polygon fill="#75A4FF" points="679.5,171.6953,669.5,175.6953,679.5,179.6953,675.5,175.6953" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="673.5" x2="1157.5" y1="175.6953" y2="175.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="466" x="685.5" y="170.6294">Selective Disclosure Request Flow, requesting DID of all schools attended</text><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="38.5" x2="80.5" y1="204.8281" y2="204.8281"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="80.5" x2="80.5" y1="204.8281" y2="217.8281"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="39.5" x2="80.5" y1="217.8281" y2="217.8281"/><polygon fill="#75A4FF" points="49.5,213.8281,39.5,217.8281,49.5,221.8281,45.5,217.8281" style="stroke: #75A4FF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="45.5" y="199.7622">Accept or Reject</text><polygon fill="#75A4FF" points="656.5,242.9609,666.5,246.9609,656.5,250.9609,660.5,246.9609" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="38.5" x2="662.5" y1="246.9609" y2="246.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="606" x="45.5" y="241.895">Accepts to send data and send access token allowing School to see all schools student went to</text><polygon fill="#75A4FF" points="1146.5,272.0938,1156.5,276.0938,1146.5,280.0938,1150.5,276.0938" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="668.5" x2="1152.5" y1="276.0938" y2="276.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="273" x="675.5" y="271.0278">Access Tokens giving access to School List</text><polygon fill="#75A4FF" points="1479.5,301.2266,1489.5,305.2266,1479.5,309.2266,1483.5,305.2266" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="1158.5" x2="1485.5" y1="305.2266" y2="305.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="309" x="1165.5" y="300.1606">Request School list using JWT with Access tokens</text><polygon fill="#75A4FF" points="1169.5,330.3594,1159.5,334.3594,1169.5,338.3594,1165.5,334.3594" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="1163.5" x2="1490.5" y1="334.3594" y2="334.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="219" x="1175.5" y="329.2935">Return JWT with requested Payload</text><polygon fill="#75A4FF" points="679.5,359.4922,669.5,363.4922,679.5,367.4922,675.5,363.4922" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="673.5" x2="1157.5" y1="363.4922" y2="363.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="300" x="685.5" y="358.4263">Request Transcript from all or selected Schools</text><polygon fill="#75A4FF" points="49.5,388.625,39.5,392.625,49.5,396.625,45.5,392.625" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="43.5" x2="667.5" y1="392.625" y2="392.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="324" x="55.5" y="387.5591">Allow access to transcripts from requested schools</text><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="38.5" x2="80.5" y1="421.7578" y2="421.7578"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="80.5" x2="80.5" y1="421.7578" y2="434.7578"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="39.5" x2="80.5" y1="434.7578" y2="434.7578"/><polygon fill="#75A4FF" points="49.5,430.7578,39.5,434.7578,49.5,438.7578,45.5,434.7578" style="stroke: #75A4FF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="45.5" y="416.6919">Accept or Reject</text><polygon fill="#75A4FF" points="656.5,459.8906,666.5,463.8906,656.5,467.8906,660.5,463.8906" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="38.5" x2="662.5" y1="463.8906" y2="463.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="45.5" y="458.8247">Accepts to send data</text><polygon fill="#75A4FF" points="1146.5,489.0234,1156.5,493.0234,1146.5,497.0234,1150.5,493.0234" style="stroke: #75A4FF; stroke-width: 1.0;"/><line style="stroke: #75A4FF; stroke-width: 1.0;" x1="668.5" x2="1152.5" y1="493.0234" y2="493.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="327" x="675.5" y="487.9575">Access token to all records from requested schools</text><!--
+@startuml
+skinparam roundcorner 10
+skinparam BoxPadding 10
+skinparam headerFontColor #75A4FF
+skinparam headerFontSize 18
+skinparam sequence {
+  ArrowColor #75A4FF
+  GroupBackgroundColor #75A4FF
+  GroupBorderColor #EDECFF
+  GroupHeaderFontColor #ffffff
+  BoxBorderColor #75A4FF
+  BoxBackgroundColor #EDECFF
+  BoxPadding 10
+
+  ParticipantBorderColor #75A4FF
+  ParticipantBackgroundColor #ffffff
+  ParticipantPadding 10
+
+  ActorBorderColor #75A4FF
+  ActorBackgroundColor #ffffff
+  EntityBorderColor #75A4FF
+  EntityBackgroundColor #ffffff
+  DatabaseBorderColor #75A4FF
+  DatabaseBackgroundColor #ffffff
+
+  LifeLineBorderColor #878787
+}
+
+actor Student
+participant StudentMobileApp
+participant School 
+database mouro_ID_Hub
+
+Student -> StudentMobileApp: Apply to school
+StudentMobileApp -> School: Send Request
+School -> StudentMobileApp: Selective Disclosure Request Flow, requesting DID of all schools attended
+
+Student -> Student: Accept or Reject
+Student -> StudentMobileApp: Accepts to send data and send access token allowing School to see all schools student went to
+
+StudentMobileApp -> School: Access Tokens giving access to School List 
+
+School -> mouro_ID_Hub : Request School list using JWT with Access tokens
+mouro_ID_Hub -> School: Return JWT with requested Payload
+School -> StudentMobileApp : Request Transcript from all or selected Schools
+
+StudentMobileApp -> Student : Allow access to transcripts from requested schools
+
+Student -> Student: Accept or Reject
+
+Student -> StudentMobileApp: Accepts to send data 
+StudentMobileApp -> School : Access token to all records from requested schools
+
+
+@enduml
+
+PlantUML version 1.2018.13(Mon Nov 26 17:11:51 GMT 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.4+11-post-Ubuntu-1ubuntu219.04
+Operating System: Linux
+OS Version: 5.0.0-24-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

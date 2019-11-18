@@ -1,0 +1,30 @@
+@startuml
+!include xdemicskin.plantuml
+
+actor Student
+participant StudentMobileApp
+participant School 
+database mouro_ID_Hub
+
+Student -> StudentMobileApp: Apply to school
+StudentMobileApp -> School: Send Request
+School -> StudentMobileApp: Selective Disclosure Request Flow, requesting DID of all schools attended
+
+Student -> Student: Accept or Reject
+Student -> StudentMobileApp: Accepts to send data and send access token allowing School to see all schools student went to
+
+StudentMobileApp -> School: Access Tokens giving access to School List 
+
+School -> mouro_ID_Hub : Request School list using JWT with Access tokens
+mouro_ID_Hub -> School: Return JWT with requested Payload
+School -> StudentMobileApp : Request Transcript from all or selected Schools
+
+StudentMobileApp -> Student : Allow access to transcripts from requested schools
+
+Student -> Student: Accept or Reject
+
+Student -> StudentMobileApp: Accepts to send data 
+StudentMobileApp -> School : Access token to all records from requested schools
+
+
+@enduml
